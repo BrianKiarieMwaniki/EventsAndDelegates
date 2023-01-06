@@ -6,6 +6,9 @@ namespace EventsAndDelegates
 
         public void EncodeVideo(Video video)
         {
+            //video encoding takes place here.
+            //after encoding is done, the encoded video is passed to the 
+            //VideoEventArgs where it can be accessed by event subscribers
             OnHandleVideoEncoded(new VideoEventArgs(video));
         }
 

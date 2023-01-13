@@ -9,8 +9,9 @@ namespace EventsAndDelegates.Services
 
         void HandleVideoEncoded(object sender, VideoEventArgs e)
         {
+            //access the video after it's encoded in this code and do whatever
             VideoHelper.SendVideo(e.Video);
-            System.Console.WriteLine("Sent by EmailService");
+            Console.WriteLine($"Send {e.Video.Title} by EmailService");
         }
     }
 }

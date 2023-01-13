@@ -18,7 +18,7 @@ namespace EventsAndDelegates
 
             if(encodeEvent is not null)
             {
-                e.Video = new Video {Title = "Events Tutorial Video"};
+                e.Video = new Video {Title = "My Video Encoded"};
 
                 encodeEvent(this,e);
             }
